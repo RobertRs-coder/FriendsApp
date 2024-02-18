@@ -10,6 +10,7 @@ import UIKit
 
 protocol SplashViewControllerProtocol: AnyObject {
     func showLoading( _ show: Bool)
+    func navigateToHome(_: String)
 }
 
 class SplashViewController: UIViewController {
@@ -28,11 +29,13 @@ class SplashViewController: UIViewController {
 }
 
 extension SplashViewController: SplashViewControllerProtocol {
+    
+    
     func showLoading(_ show: Bool) {
         switch show {
         case true where !activityIndicator.isAnimating:
             activityIndicator.stopAnimating()
-
+            
         case false where activityIndicator.isAnimating:
             activityIndicator.startAnimating()
             
@@ -40,6 +43,16 @@ extension SplashViewController: SplashViewControllerProtocol {
         }
         
     }
+    
+    func navigateToHome(_ name: String) {
+        
+        let homeStoryboard = UIStoryboard(name: name, bundle: nil)
+        
+        guard let destinationViewController = homeStoryboard.instantiateInitialViewController() else { return }
+        
+        self.navigationController?.setViewControllers([destinationViewController], animated: true)
+    }
+
 }
  
 

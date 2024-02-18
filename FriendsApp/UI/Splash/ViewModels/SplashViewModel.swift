@@ -13,7 +13,9 @@ protocol SplashViewModelProtocol {
 
 final class SplashViewModel {
     
-    weak var delegate: SplashViewControllerProtocol?
+    private weak var delegate: SplashViewControllerProtocol?
+    
+    private let homeStoryboardName = "HomeView"
     
     init(delegate: SplashViewControllerProtocol?) {
         self.delegate = delegate
@@ -24,6 +26,9 @@ final class SplashViewModel {
         delegate?.showLoading(true)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
+            
+            self.delegate?.navigateToHome(self.homeStoryboardName)
+            
             self.delegate?.showLoading(false)
             
         }
