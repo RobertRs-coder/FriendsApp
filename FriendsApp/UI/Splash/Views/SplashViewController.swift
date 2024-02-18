@@ -46,10 +46,13 @@ extension SplashViewController: SplashViewControllerProtocol {
     
     func navigateToHome(_ name: String) {
         
+        /// 1. Create Storyboard
         let homeStoryboard = UIStoryboard(name: name, bundle: nil)
         
+        /// 2. Instantiate its own ViewController as initial ViewController
         guard let destinationViewController = homeStoryboard.instantiateInitialViewController() else { return }
         
+        /// 3. Set stack of ViewControllers embedded in navigationController
         self.navigationController?.setViewControllers([destinationViewController], animated: true)
     }
 
