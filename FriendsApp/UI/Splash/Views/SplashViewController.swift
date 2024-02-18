@@ -30,7 +30,6 @@ class SplashViewController: UIViewController {
 
 extension SplashViewController: SplashViewControllerProtocol {
     
-    
     func showLoading(_ show: Bool) {
         switch show {
         case true where !activityIndicator.isAnimating:

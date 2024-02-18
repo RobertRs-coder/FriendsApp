@@ -19,6 +19,7 @@
 		23F11B462B81B17400D82180 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F11B452B81B17400D82180 /* HomeViewController.swift */; };
 		23F11B482B81B18200D82180 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F11B472B81B18200D82180 /* HomeViewModel.swift */; };
 		23F11B4A2B81B61900D82180 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F11B492B81B61900D82180 /* CharacterModel.swift */; };
+		23F11B4C2B81C1AF00D82180 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F11B4B2B81C1AF00D82180 /* CellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		23F11B452B81B17400D82180 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		23F11B472B81B18200D82180 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		23F11B492B81B61900D82180 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		23F11B4B2B81C1AF00D82180 /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				23F11B432B81B16000D82180 /* HomeView.storyboard */,
 				23F11B452B81B17400D82180 /* HomeViewController.swift */,
+				23F11B4B2B81C1AF00D82180 /* CellViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				23267D052B81A9BB00A4587D /* SplashViewController.swift in Sources */,
 				23267D012B81A9BB00A4587D /* AppDelegate.swift in Sources */,
 				23267D032B81A9BB00A4587D /* SceneDelegate.swift in Sources */,
+				23F11B4C2B81C1AF00D82180 /* CellViewController.swift in Sources */,
 				23F11B3C2B81AC9E00D82180 /* SplashViewModel.swift in Sources */,
 				23F11B422B81B12200D82180 /* HomeCellModel.swift in Sources */,
 				23F11B4A2B81B61900D82180 /* CharacterModel.swift in Sources */,
