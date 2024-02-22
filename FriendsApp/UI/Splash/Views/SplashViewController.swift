@@ -49,7 +49,9 @@ extension SplashViewController: SplashViewControllerProtocol {
         let homeStoryboard = UIStoryboard(name: name, bundle: nil)
         
         /// 2. Instantiate its own ViewController as initial ViewController
-        guard let destinationViewController = homeStoryboard.instantiateInitialViewController() else { return }
+        guard let destinationViewController = homeStoryboard.instantiateInitialViewController() as? HomeViewController else { return }
+        
+        destinationViewController.viewModel = HomeViewModel(delegate: destinationViewController, data: sampleCharactersData)
         
         /// 3. Set stack of ViewControllers embedded in navigationController
         self.navigationController?.setViewControllers([destinationViewController], animated: true)

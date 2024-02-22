@@ -12,6 +12,10 @@
 		23267D052B81A9BB00A4587D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23267D042B81A9BB00A4587D /* SplashViewController.swift */; };
 		23267D0A2B81A9BC00A4587D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23267D092B81A9BC00A4587D /* Assets.xcassets */; };
 		23267D0D2B81A9BC00A4587D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23267D0B2B81A9BC00A4587D /* LaunchScreen.storyboard */; };
+		23EB59892B857DD000B077FE /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EB59882B857DD000B077FE /* DetailView.storyboard */; };
+		23EB598B2B857DDD00B077FE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB598A2B857DDD00B077FE /* DetailViewController.swift */; };
+		23EB598D2B857DE900B077FE /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB598C2B857DE900B077FE /* DetailViewModel.swift */; };
+		23EB59922B857E1200B077FE /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB59912B857E1200B077FE /* DetailModel.swift */; };
 		23F11B322B81AA0E00D82180 /* SplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F11B312B81AA0E00D82180 /* SplashView.storyboard */; };
 		23F11B3C2B81AC9E00D82180 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F11B3B2B81AC9E00D82180 /* SplashViewModel.swift */; };
 		23F11B422B81B12200D82180 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F11B412B81B12200D82180 /* HomeCellModel.swift */; };
@@ -30,6 +34,10 @@
 		23267D092B81A9BC00A4587D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23267D0C2B81A9BC00A4587D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23267D0E2B81A9BC00A4587D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EB59882B857DD000B077FE /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
+		23EB598A2B857DDD00B077FE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		23EB598C2B857DE900B077FE /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		23EB59912B857E1200B077FE /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		23F11B312B81AA0E00D82180 /* SplashView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashView.storyboard; sourceTree = "<group>"; };
 		23F11B3B2B81AC9E00D82180 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		23F11B412B81B12200D82180 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
@@ -79,6 +87,41 @@
 			path = FriendsApp;
 			sourceTree = "<group>";
 		};
+		23EB59872B857D4800B077FE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				23EB59902B857DFA00B077FE /* Models */,
+				23EB598E2B857DED00B077FE /* Views */,
+				23EB598F2B857DF300B077FE /* ViewModels */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		23EB598E2B857DED00B077FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23EB59882B857DD000B077FE /* DetailView.storyboard */,
+				23EB598A2B857DDD00B077FE /* DetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23EB598F2B857DF300B077FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				23EB598C2B857DE900B077FE /* DetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		23EB59902B857DFA00B077FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23EB59912B857E1200B077FE /* DetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		23F11B332B81AA4200D82180 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +150,9 @@
 		23F11B362B81AA7800D82180 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				23F11B3D2B81B0E300D82180 /* Home */,
 				23F11B372B81AA9E00D82180 /* Splash */,
+				23F11B3D2B81B0E300D82180 /* Home */,
+				23EB59872B857D4800B077FE /* Detail */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -245,6 +289,7 @@
 				23267D0D2B81A9BC00A4587D /* LaunchScreen.storyboard in Resources */,
 				23267D0A2B81A9BC00A4587D /* Assets.xcassets in Resources */,
 				23F11B442B81B16000D82180 /* HomeView.storyboard in Resources */,
+				23EB59892B857DD000B077FE /* DetailView.storyboard in Resources */,
 				23F11B322B81AA0E00D82180 /* SplashView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EB59922B857E1200B077FE /* DetailModel.swift in Sources */,
 				23267D052B81A9BB00A4587D /* SplashViewController.swift in Sources */,
 				23267D012B81A9BB00A4587D /* AppDelegate.swift in Sources */,
 				23267D032B81A9BB00A4587D /* SceneDelegate.swift in Sources */,
@@ -263,7 +309,9 @@
 				23F11B3C2B81AC9E00D82180 /* SplashViewModel.swift in Sources */,
 				23F11B422B81B12200D82180 /* HomeCellModel.swift in Sources */,
 				23F11B4A2B81B61900D82180 /* CharacterModel.swift in Sources */,
+				23EB598B2B857DDD00B077FE /* DetailViewController.swift in Sources */,
 				23F11B482B81B18200D82180 /* HomeViewModel.swift in Sources */,
+				23EB598D2B857DE900B077FE /* DetailViewModel.swift in Sources */,
 				23F11B462B81B17400D82180 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

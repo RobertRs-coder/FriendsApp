@@ -28,9 +28,9 @@ class CellViewController: UICollectionViewCell {
         cellTitle = nil
     }
     
-    func updateViews() {
-        update(image: "")
-        update(title: "")
+    func updateViews(data: HomeCellModel) {
+        update(image: data.image)
+        update(title: data.title)
     }
     
     private func update(image: String?) {
